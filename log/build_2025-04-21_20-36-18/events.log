@@ -1,0 +1,768 @@
+[0.000000] (-) TimerEvent: {}
+[0.000123] (snake_segmentation) JobQueued: {'identifier': 'snake_segmentation', 'dependencies': OrderedDict()}
+[0.000142] (yolo_msgs) JobQueued: {'identifier': 'yolo_msgs', 'dependencies': OrderedDict()}
+[0.000152] (yolo_ros) JobQueued: {'identifier': 'yolo_ros', 'dependencies': OrderedDict([('yolo_msgs', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs')])}
+[0.000162] (yolo_bringup) JobQueued: {'identifier': 'yolo_bringup', 'dependencies': OrderedDict([('yolo_msgs', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs'), ('yolo_ros', '/home/aleksantari/ros2_snake_ws/install/yolo_ros')])}
+[0.000172] (yolo_msgs) JobStarted: {'identifier': 'yolo_msgs'}
+[0.005268] (snake_segmentation) JobStarted: {'identifier': 'snake_segmentation'}
+[0.024667] (yolo_msgs) JobProgress: {'identifier': 'yolo_msgs', 'progress': 'cmake'}
+[0.025154] (yolo_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/aleksantari/ros2_snake_ws/install/yolo_msgs'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/yolo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aleksantari'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aleksantari'), ('OLDPWD', '/home/aleksantari'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aleksantari'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aleksantari'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RAHE52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aleksantari/ros2_snake_ws/build/yolo_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[0.099571] (-) TimerEvent: {}
+[0.134549] (yolo_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199672] (-) TimerEvent: {}
+[0.225910] (yolo_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.235568] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.298180] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.299734] (-) TimerEvent: {}
+[0.303312] (yolo_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.303657] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.304340] (yolo_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.307095] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.359102] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.364322] (yolo_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.364496] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.364814] (yolo_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.368591] (yolo_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.399814] (-) TimerEvent: {}
+[0.470521] (snake_segmentation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/aleksantari/ros2_snake_ws/build/snake_segmentation/build', '--no-deps', 'symlink_data'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/snake_segmentation', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aleksantari', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/aleksantari', 'OLDPWD': '/home/aleksantari', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1708', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'aleksantari', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aleksantari', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.RAHE52', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.119', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aleksantari/ros2_snake_ws/build/snake_segmentation', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aleksantari/ros2_snake_ws/build/snake_segmentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.485315] (yolo_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.499901] (-) TimerEvent: {}
+[0.531500] (yolo_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.559936] (yolo_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.564575] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.571370] (yolo_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.599991] (-) TimerEvent: {}
+[0.612493] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.616838] (snake_segmentation) StdoutLine: {'line': b'running develop\n'}
+[0.653287] (yolo_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.679137] (yolo_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.700075] (-) TimerEvent: {}
+[0.705724] (snake_segmentation) StdoutLine: {'line': b'running egg_info\n'}
+[0.705913] (snake_segmentation) StdoutLine: {'line': b'writing snake_segmentation.egg-info/PKG-INFO\n'}
+[0.706212] (snake_segmentation) StdoutLine: {'line': b'writing dependency_links to snake_segmentation.egg-info/dependency_links.txt\n'}
+[0.706388] (snake_segmentation) StdoutLine: {'line': b'writing entry points to snake_segmentation.egg-info/entry_points.txt\n'}
+[0.706497] (snake_segmentation) StdoutLine: {'line': b'writing requirements to snake_segmentation.egg-info/requires.txt\n'}
+[0.706681] (snake_segmentation) StdoutLine: {'line': b'writing top-level names to snake_segmentation.egg-info/top_level.txt\n'}
+[0.707736] (snake_segmentation) StdoutLine: {'line': b"reading manifest file 'snake_segmentation.egg-info/SOURCES.txt'\n"}
+[0.708425] (snake_segmentation) StdoutLine: {'line': b"writing manifest file 'snake_segmentation.egg-info/SOURCES.txt'\n"}
+[0.709214] (snake_segmentation) StdoutLine: {'line': b'running build_ext\n'}
+[0.709417] (snake_segmentation) StdoutLine: {'line': b'Creating /home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages/snake-segmentation.egg-link (link to .)\n'}
+[0.709884] (snake_segmentation) StdoutLine: {'line': b'Installing segmentation_node script to /home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/snake_segmentation\n'}
+[0.710139] (snake_segmentation) StdoutLine: {'line': b'\n'}
+[0.710179] (snake_segmentation) StdoutLine: {'line': b'Installed /home/aleksantari/ros2_snake_ws/build/snake_segmentation\n'}
+[0.710248] (snake_segmentation) StdoutLine: {'line': b'running symlink_data\n'}
+[0.732035] (snake_segmentation) CommandEnded: {'returncode': 0}
+[0.743490] (snake_segmentation) JobEnded: {'identifier': 'snake_segmentation', 'rc': 0}
+[0.800163] (-) TimerEvent: {}
+[0.900416] (-) TimerEvent: {}
+[0.941946] (yolo_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.000501] (-) TimerEvent: {}
+[1.100717] (-) TimerEvent: {}
+[1.114816] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.200890] (-) TimerEvent: {}
+[1.301266] (-) TimerEvent: {}
+[1.325034] (yolo_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.340460] (yolo_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.342620] (yolo_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.360906] (yolo_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.361010] (yolo_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.361042] (yolo_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.361069] (yolo_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[1.372457] (yolo_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.401345] (-) TimerEvent: {}
+[1.420362] (yolo_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.461472] (yolo_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.469893] (yolo_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/aleksantari/ros2_snake_ws/build/yolo_msgs\n'}
+[1.474229] (yolo_msgs) CommandEnded: {'returncode': 0}
+[1.474571] (yolo_msgs) JobProgress: {'identifier': 'yolo_msgs', 'progress': 'build'}
+[1.476647] (yolo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aleksantari/ros2_snake_ws/build/yolo_msgs', '--', '-j2', '-l2'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/yolo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aleksantari'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aleksantari'), ('OLDPWD', '/home/aleksantari'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aleksantari'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aleksantari'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RAHE52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aleksantari/ros2_snake_ws/build/yolo_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[1.500386] (yolo_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.501415] (-) TimerEvent: {}
+[1.506066] (yolo_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.601519] (-) TimerEvent: {}
+[1.701787] (-) TimerEvent: {}
+[1.802033] (-) TimerEvent: {}
+[1.902285] (-) TimerEvent: {}
+[2.002520] (-) TimerEvent: {}
+[2.102785] (-) TimerEvent: {}
+[2.203059] (-) TimerEvent: {}
+[2.303403] (-) TimerEvent: {}
+[2.343700] (yolo_msgs) StdoutLine: {'line': b'[  1%] Built target yolo_msgs__cpp\n'}
+[2.355113] (yolo_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_yolo_msgs\n'}
+[2.360074] (yolo_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.360200] (yolo_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/point2_d__functions.c.o\x1b[0m\n'}
+[2.402250] (yolo_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/vector2__functions.c.o\x1b[0m\n'}
+[2.403464] (-) TimerEvent: {}
+[2.430571] (yolo_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/pose2_d__functions.c.o\x1b[0m\n'}
+[2.462395] (yolo_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box2_d__functions.c.o\x1b[0m\n'}
+[2.490003] (yolo_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/bounding_box3_d__functions.c.o\x1b[0m\n'}
+[2.503567] (-) TimerEvent: {}
+[2.525909] (yolo_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/mask__functions.c.o\x1b[0m\n'}
+[2.556830] (yolo_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d__functions.c.o\x1b[0m\n'}
+[2.582321] (yolo_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point2_d_array__functions.c.o\x1b[0m\n'}
+[2.603658] (-) TimerEvent: {}
+[2.607643] (yolo_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d__functions.c.o\x1b[0m\n'}
+[2.634440] (yolo_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/key_point3_d_array__functions.c.o\x1b[0m\n'}
+[2.666757] (yolo_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection__functions.c.o\x1b[0m\n'}
+[2.703021] (yolo_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/msg/detail/detection_array__functions.c.o\x1b[0m\n'}
+[2.703718] (-) TimerEvent: {}
+[2.741660] (yolo_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolo_msgs/srv/detail/set_classes__functions.c.o\x1b[0m\n'}
+[2.773870] (yolo_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32m\x1b[1mLinking C shared library libyolo_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.796252] (yolo_msgs) StdoutLine: {'line': b'[ 13%] Built target yolo_msgs__rosidl_generator_c\n'}
+[2.801551] (yolo_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.803895] (-) TimerEvent: {}
+[2.840695] (yolo_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/point2_d__type_support.cpp.o\x1b[0m\n'}
+[2.903991] (-) TimerEvent: {}
+[3.004263] (-) TimerEvent: {}
+[3.025471] (yolo_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/vector2__type_support.cpp.o\x1b[0m\n'}
+[3.104353] (-) TimerEvent: {}
+[3.167091] (yolo_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[3.204437] (-) TimerEvent: {}
+[3.304696] (-) TimerEvent: {}
+[3.306175] (yolo_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[3.404795] (-) TimerEvent: {}
+[3.448207] (yolo_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.448344] (yolo_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[3.504898] (-) TimerEvent: {}
+[3.595212] (yolo_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/mask__type_support.cpp.o\x1b[0m\n'}
+[3.604993] (-) TimerEvent: {}
+[3.678365] (yolo_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o\x1b[0m\n'}
+[3.705097] (-) TimerEvent: {}
+[3.733869] (yolo_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[3.805198] (-) TimerEvent: {}
+[3.883018] (yolo_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[3.903482] (yolo_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[3.905263] (-) TimerEvent: {}
+[4.005503] (-) TimerEvent: {}
+[4.022612] (yolo_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[4.105603] (-) TimerEvent: {}
+[4.108536] (yolo_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[4.164548] (yolo_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[4.205702] (-) TimerEvent: {}
+[4.299100] (yolo_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[4.305799] (-) TimerEvent: {}
+[4.316616] (yolo_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[4.405909] (-) TimerEvent: {}
+[4.442828] (yolo_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[4.506044] (-) TimerEvent: {}
+[4.536186] (yolo_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o\x1b[0m\n'}
+[4.594578] (yolo_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolo_msgs/srv/set_classes__type_support.cpp.o\x1b[0m\n'}
+[4.606153] (-) TimerEvent: {}
+[4.706445] (-) TimerEvent: {}
+[4.731814] (yolo_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.763873] (yolo_msgs) StdoutLine: {'line': b'[ 30%] Built target yolo_msgs__rosidl_typesupport_cpp\n'}
+[4.768409] (yolo_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[4.768547] (yolo_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[4.806533] (-) TimerEvent: {}
+[4.906803] (-) TimerEvent: {}
+[4.971595] (yolo_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[5.006901] (-) TimerEvent: {}
+[5.107213] (-) TimerEvent: {}
+[5.204071] (yolo_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[5.207280] (-) TimerEvent: {}
+[5.307538] (-) TimerEvent: {}
+[5.351204] (yolo_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/point2_d__type_support.cpp.o\x1b[0m\n'}
+[5.407645] (-) TimerEvent: {}
+[5.415094] (yolo_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[5.507754] (-) TimerEvent: {}
+[5.544472] (yolo_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/vector2__type_support.cpp.o\x1b[0m\n'}
+[5.607837] (-) TimerEvent: {}
+[5.645246] (yolo_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o\x1b[0m\n'}
+[5.707938] (-) TimerEvent: {}
+[5.746332] (yolo_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[5.808046] (-) TimerEvent: {}
+[5.872891] (yolo_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\x1b[0m\n'}
+[5.908155] (-) TimerEvent: {}
+[5.935321] (yolo_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[6.008259] (-) TimerEvent: {}
+[6.108559] (-) TimerEvent: {}
+[6.154622] (yolo_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[6.161912] (yolo_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolo_msgs/srv/detail/dds_fastrtps/set_classes__type_support.cpp.o\x1b[0m\n'}
+[6.208668] (-) TimerEvent: {}
+[6.308977] (-) TimerEvent: {}
+[6.361102] (yolo_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/mask__type_support.cpp.o\x1b[0m\n'}
+[6.409080] (-) TimerEvent: {}
+[6.415729] (yolo_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.470656] (yolo_msgs) StdoutLine: {'line': b'[ 41%] Built target yolo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[6.509178] (-) TimerEvent: {}
+[6.573815] (yolo_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[6.606517] (yolo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[6.607017] (yolo_msgs) StdoutLine: {'line': b'creating yolo_msgs.egg-info\n'}
+[6.607217] (yolo_msgs) StdoutLine: {'line': b'writing yolo_msgs.egg-info/PKG-INFO\n'}
+[6.607421] (yolo_msgs) StdoutLine: {'line': b'writing dependency_links to yolo_msgs.egg-info/dependency_links.txt\n'}
+[6.607557] (yolo_msgs) StdoutLine: {'line': b'writing top-level names to yolo_msgs.egg-info/top_level.txt\n'}
+[6.607822] (yolo_msgs) StdoutLine: {'line': b"writing manifest file 'yolo_msgs.egg-info/SOURCES.txt'\n"}
+[6.608922] (yolo_msgs) StdoutLine: {'line': b"reading manifest file 'yolo_msgs.egg-info/SOURCES.txt'\n"}
+[6.609234] (-) TimerEvent: {}
+[6.609374] (yolo_msgs) StdoutLine: {'line': b"writing manifest file 'yolo_msgs.egg-info/SOURCES.txt'\n"}
+[6.626370] (yolo_msgs) StdoutLine: {'line': b'[ 42%] Built target ament_cmake_python_build_yolo_msgs_egg\n'}
+[6.632516] (yolo_msgs) StdoutLine: {'line': b'[ 43%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.709360] (-) TimerEvent: {}
+[6.778798] (yolo_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[6.809463] (-) TimerEvent: {}
+[6.909774] (-) TimerEvent: {}
+[7.003675] (yolo_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[7.009858] (-) TimerEvent: {}
+[7.110121] (-) TimerEvent: {}
+[7.201875] (yolo_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[7.210223] (-) TimerEvent: {}
+[7.291542] (yolo_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/point2_d__type_support_c.cpp.o\x1b[0m\n'}
+[7.310327] (-) TimerEvent: {}
+[7.410625] (-) TimerEvent: {}
+[7.419803] (yolo_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/detection__type_support.cpp.o\x1b[0m\n'}
+[7.470677] (yolo_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/vector2__type_support_c.cpp.o\x1b[0m\n'}
+[7.510733] (-) TimerEvent: {}
+[7.611042] (-) TimerEvent: {}
+[7.643030] (yolo_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/msg/detail/detection_array__type_support.cpp.o\x1b[0m\n'}
+[7.646227] (yolo_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/pose2_d__type_support_c.cpp.o\x1b[0m\n'}
+[7.711150] (-) TimerEvent: {}
+[7.811463] (-) TimerEvent: {}
+[7.822691] (yolo_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o\x1b[0m\n'}
+[7.911566] (-) TimerEvent: {}
+[7.935045] (yolo_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolo_msgs/srv/detail/set_classes__type_support.cpp.o\x1b[0m\n'}
+[7.996769] (yolo_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o\x1b[0m\n'}
+[8.011664] (-) TimerEvent: {}
+[8.112146] (-) TimerEvent: {}
+[8.163106] (yolo_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[8.186197] (yolo_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/mask__type_support_c.cpp.o\x1b[0m\n'}
+[8.211757] (yolo_msgs) StdoutLine: {'line': b'[ 54%] Built target yolo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[8.212199] (-) TimerEvent: {}
+[8.217007] (yolo_msgs) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[8.312304] (-) TimerEvent: {}
+[8.360267] (yolo_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point2_d__type_support_c.cpp.o\x1b[0m\n'}
+[8.412399] (-) TimerEvent: {}
+[8.512687] (-) TimerEvent: {}
+[8.528090] (yolo_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o\x1b[0m\n'}
+[8.612789] (-) TimerEvent: {}
+[8.709544] (yolo_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point3_d__type_support_c.cpp.o\x1b[0m\n'}
+[8.712883] (-) TimerEvent: {}
+[8.813164] (-) TimerEvent: {}
+[8.825657] (yolo_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/point2_d__type_support.c.o\x1b[0m\n'}
+[8.845651] (yolo_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/vector2__type_support.c.o\x1b[0m\n'}
+[8.869740] (yolo_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/pose2_d__type_support.c.o\x1b[0m\n'}
+[8.888655] (yolo_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/bounding_box2_d__type_support.c.o\x1b[0m\n'}
+[8.892363] (yolo_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o\x1b[0m\n'}
+[8.907048] (yolo_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/bounding_box3_d__type_support.c.o\x1b[0m\n'}
+[8.913246] (-) TimerEvent: {}
+[8.928855] (yolo_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/mask__type_support.c.o\x1b[0m\n'}
+[8.954685] (yolo_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point2_d__type_support.c.o\x1b[0m\n'}
+[8.974398] (yolo_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point2_d_array__type_support.c.o\x1b[0m\n'}
+[8.994305] (yolo_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point3_d__type_support.c.o\x1b[0m\n'}
+[9.013355] (-) TimerEvent: {}
+[9.013840] (yolo_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/key_point3_d_array__type_support.c.o\x1b[0m\n'}
+[9.034196] (yolo_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/detection__type_support.c.o\x1b[0m\n'}
+[9.059552] (yolo_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/msg/detail/detection_array__type_support.c.o\x1b[0m\n'}
+[9.079352] (yolo_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/detection__type_support_c.cpp.o\x1b[0m\n'}
+[9.084311] (yolo_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolo_msgs/srv/detail/set_classes__type_support.c.o\x1b[0m\n'}
+[9.105691] (yolo_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking C shared library libyolo_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[9.113445] (-) TimerEvent: {}
+[9.127249] (yolo_msgs) StdoutLine: {'line': b'[ 70%] Built target yolo_msgs__rosidl_typesupport_introspection_c\n'}
+[9.132200] (yolo_msgs) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[9.213550] (-) TimerEvent: {}
+[9.267102] (yolo_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/msg/detail/detection_array__type_support_c.cpp.o\x1b[0m\n'}
+[9.313657] (-) TimerEvent: {}
+[9.413950] (-) TimerEvent: {}
+[9.444696] (yolo_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolo_msgs/srv/detail/set_classes__type_support_c.cpp.o\x1b[0m\n'}
+[9.514042] (-) TimerEvent: {}
+[9.596756] (yolo_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/point2_d__type_support.cpp.o\x1b[0m\n'}
+[9.614161] (yolo_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/vector2__type_support.cpp.o\x1b[0m\n'}
+[9.614270] (-) TimerEvent: {}
+[9.628353] (yolo_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[9.630215] (yolo_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/pose2_d__type_support.cpp.o\x1b[0m\n'}
+[9.652325] (yolo_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/bounding_box2_d__type_support.cpp.o\x1b[0m\n'}
+[9.669117] (yolo_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/bounding_box3_d__type_support.cpp.o\x1b[0m\n'}
+[9.676363] (yolo_msgs) StdoutLine: {'line': b'[ 77%] Built target yolo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[9.680220] (yolo_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/mask__type_support.cpp.o\x1b[0m\n'}
+[9.686976] (yolo_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point2_d__type_support.cpp.o\x1b[0m\n'}
+[9.697930] (yolo_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point2_d_array__type_support.cpp.o\x1b[0m\n'}
+[9.704025] (yolo_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point3_d__type_support.cpp.o\x1b[0m\n'}
+[9.714384] (-) TimerEvent: {}
+[9.715327] (yolo_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/key_point3_d_array__type_support.cpp.o\x1b[0m\n'}
+[9.720848] (yolo_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/detection__type_support.cpp.o\x1b[0m\n'}
+[9.733551] (yolo_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/msg/detection_array__type_support.cpp.o\x1b[0m\n'}
+[9.739113] (yolo_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/yolo_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolo_msgs/srv/set_classes__type_support.cpp.o\x1b[0m\n'}
+[9.762146] (yolo_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libyolo_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.784237] (yolo_msgs) StdoutLine: {'line': b'[ 84%] Built target yolo_msgs__rosidl_typesupport_c\n'}
+[9.792827] (yolo_msgs) StdoutLine: {'line': b'[ 84%] Built target yolo_msgs\n'}
+[9.801810] (yolo_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.814584] (-) TimerEvent: {}
+[9.915157] (-) TimerEvent: {}
+[10.016333] (-) TimerEvent: {}
+[10.117137] (-) TimerEvent: {}
+[10.217539] (-) TimerEvent: {}
+[10.317866] (-) TimerEvent: {}
+[10.418090] (-) TimerEvent: {}
+[10.518557] (-) TimerEvent: {}
+[10.619560] (-) TimerEvent: {}
+[10.720766] (-) TimerEvent: {}
+[10.820975] (-) TimerEvent: {}
+[10.869995] (yolo_msgs) StdoutLine: {'line': b'[ 85%] Built target yolo_msgs__py\n'}
+[10.879346] (yolo_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_point2_d_s.c.o\x1b[0m\n'}
+[10.880132] (yolo_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_vector2_s.c.o\x1b[0m\n'}
+[10.921086] (-) TimerEvent: {}
+[10.960977] (yolo_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_pose2_d_s.c.o\x1b[0m\n'}
+[10.969942] (yolo_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_bounding_box2_d_s.c.o\x1b[0m\n'}
+[11.019946] (yolo_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_bounding_box3_d_s.c.o\x1b[0m\n'}
+[11.021158] (-) TimerEvent: {}
+[11.027209] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_mask_s.c.o\x1b[0m\n'}
+[11.089066] (yolo_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point2_d_s.c.o\x1b[0m\n'}
+[11.108065] (yolo_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point2_d_array_s.c.o\x1b[0m\n'}
+[11.121262] (-) TimerEvent: {}
+[11.153984] (yolo_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point3_d_s.c.o\x1b[0m\n'}
+[11.171682] (yolo_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_key_point3_d_array_s.c.o\x1b[0m\n'}
+[11.213286] (yolo_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_detection_s.c.o\x1b[0m\n'}
+[11.221359] (-) TimerEvent: {}
+[11.232944] (yolo_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/msg/_detection_array_s.c.o\x1b[0m\n'}
+[11.283312] (yolo_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_generator_py.dir/rosidl_generator_py/yolo_msgs/srv/_set_classes_s.c.o\x1b[0m\n'}
+[11.321461] (-) TimerEvent: {}
+[11.348410] (yolo_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/libyolo_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[11.379895] (yolo_msgs) StdoutLine: {'line': b'[ 96%] Built target yolo_msgs__rosidl_generator_py\n'}
+[11.389844] (yolo_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[11.389959] (yolo_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[11.421568] (-) TimerEvent: {}
+[11.472767] (yolo_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.474459] (yolo_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.494516] (yolo_msgs) StdoutLine: {'line': b'[ 99%] Built target yolo_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[11.495661] (yolo_msgs) StdoutLine: {'line': b'[ 99%] Built target yolo_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[11.504257] (yolo_msgs) StdoutLine: {'line': b'[100%] \x1b[32mBuilding C object CMakeFiles/yolo_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[11.521674] (-) TimerEvent: {}
+[11.588164] (yolo_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[11.610332] (yolo_msgs) StdoutLine: {'line': b'[100%] Built target yolo_msgs__rosidl_typesupport_c__pyext\n'}
+[11.616993] (yolo_msgs) CommandEnded: {'returncode': 0}
+[11.617483] (yolo_msgs) JobProgress: {'identifier': 'yolo_msgs', 'progress': 'install'}
+[11.621764] (-) TimerEvent: {}
+[11.622776] (yolo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aleksantari/ros2_snake_ws/build/yolo_msgs'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/yolo_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aleksantari'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aleksantari'), ('OLDPWD', '/home/aleksantari'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aleksantari'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aleksantari'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RAHE52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aleksantari/ros2_snake_ws/build/yolo_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[11.626987] (yolo_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.627547] (yolo_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[11.627923] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/ament_index/resource_index/rosidl_interfaces/yolo_msgs\n'}
+[11.633572] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box2_d.h\n'}
+[11.638114] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box3_d.h\n'}
+[11.642617] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__functions.h\n'}
+[11.646895] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__struct.h\n'}
+[11.651695] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.h\n'}
+[11.661455] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__functions.h\n'}
+[11.666279] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__struct.h\n'}
+[11.671455] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.h\n'}
+[11.676227] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__functions.h\n'}
+[11.685326] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__struct.h\n'}
+[11.690240] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.h\n'}
+[11.694602] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__functions.h\n'}
+[11.699159] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__struct.h\n'}
+[11.703595] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.h\n'}
+[11.707574] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__functions.h\n'}
+[11.712039] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__struct.h\n'}
+[11.716747] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.h\n'}
+[11.721435] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__functions.h\n'}
+[11.721882] (-) TimerEvent: {}
+[11.726061] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__struct.h\n'}
+[11.730005] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.h\n'}
+[11.733558] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__functions.h\n'}
+[11.737701] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__struct.h\n'}
+[11.741857] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.h\n'}
+[11.745960] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__functions.h\n'}
+[11.754825] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__struct.h\n'}
+[11.759272] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.h\n'}
+[11.764163] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__functions.h\n'}
+[11.768733] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__struct.h\n'}
+[11.773270] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.h\n'}
+[11.778435] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__functions.h\n'}
+[11.782294] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__struct.h\n'}
+[11.787050] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.h\n'}
+[11.791404] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__functions.h\n'}
+[11.795626] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__struct.h\n'}
+[11.799452] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.h\n'}
+[11.803917] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__functions.h\n'}
+[11.808767] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__struct.h\n'}
+[11.813171] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.h\n'}
+[11.817172] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection.h\n'}
+[11.821301] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection_array.h\n'}
+[11.821987] (-) TimerEvent: {}
+[11.825381] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d.h\n'}
+[11.829477] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d_array.h\n'}
+[11.833404] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d.h\n'}
+[11.837517] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d_array.h\n'}
+[11.841273] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/mask.h\n'}
+[11.844817] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/point2_d.h\n'}
+[11.849736] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/pose2_d.h\n'}
+[11.860047] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[11.860154] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/vector2.h\n'}
+[11.860437] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__functions.h\n'}
+[11.865446] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__struct.h\n'}
+[11.869201] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.h\n'}
+[11.872629] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/set_classes.h\n'}
+[11.876496] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/library_path.sh\n'}
+[11.880854] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/library_path.dsv\n'}
+[11.885212] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[11.889041] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[11.892749] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[11.896435] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[11.900060] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[11.903621] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[11.907461] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[11.910998] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[11.914676] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_c.h\n'}
+[11.917899] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[11.921000] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[11.922187] (-) TimerEvent: {}
+[11.924887] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_c.h\n'}
+[11.929022] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[11.932906] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_fastrtps_c.h\n'}
+[11.937094] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h\n'}
+[11.940980] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h\n'}
+[11.944674] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[11.949728] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[11.955849] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_c.h\n'}
+[11.957323] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_c.h\n'}
+[11.961116] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_c.h\n'}
+[11.965384] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h\n'}
+[11.969522] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_introspection_c.h\n'}
+[11.973894] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_c.h\n'}
+[11.977730] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h\n'}
+[11.981542] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_introspection_c.h\n'}
+[11.985146] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[11.988875] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_introspection_c.h\n'}
+[11.992984] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box2_d.hpp\n'}
+[11.996670] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/bounding_box3_d.hpp\n'}
+[12.000367] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__builder.hpp\n'}
+[12.004027] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__struct.hpp\n'}
+[12.007744] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__traits.hpp\n'}
+[12.011923] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__type_support.hpp\n'}
+[12.016168] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__builder.hpp\n'}
+[12.019633] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__struct.hpp\n'}
+[12.022564] (-) TimerEvent: {}
+[12.022852] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__traits.hpp\n'}
+[12.026470] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__type_support.hpp\n'}
+[12.030911] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__builder.hpp\n'}
+[12.034920] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__struct.hpp\n'}
+[12.038798] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__traits.hpp\n'}
+[12.042732] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__type_support.hpp\n'}
+[12.046583] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__builder.hpp\n'}
+[12.050527] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__struct.hpp\n'}
+[12.054110] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__traits.hpp\n'}
+[12.059852] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__type_support.hpp\n'}
+[12.062165] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__builder.hpp\n'}
+[12.067321] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__struct.hpp\n'}
+[12.072125] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__traits.hpp\n'}
+[12.076396] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__type_support.hpp\n'}
+[12.080178] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__builder.hpp\n'}
+[12.083806] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__struct.hpp\n'}
+[12.087495] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__traits.hpp\n'}
+[12.091396] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__type_support.hpp\n'}
+[12.094981] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__builder.hpp\n'}
+[12.098603] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__struct.hpp\n'}
+[12.102185] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__traits.hpp\n'}
+[12.105923] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__type_support.hpp\n'}
+[12.109641] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__builder.hpp\n'}
+[12.113235] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__struct.hpp\n'}
+[12.116970] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__traits.hpp\n'}
+[12.120491] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__type_support.hpp\n'}
+[12.122923] (-) TimerEvent: {}
+[12.124271] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__builder.hpp\n'}
+[12.127866] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__struct.hpp\n'}
+[12.131441] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__traits.hpp\n'}
+[12.135101] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__type_support.hpp\n'}
+[12.138674] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__builder.hpp\n'}
+[12.142374] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__struct.hpp\n'}
+[12.145898] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__traits.hpp\n'}
+[12.150637] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__type_support.hpp\n'}
+[12.154434] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__builder.hpp\n'}
+[12.158582] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__struct.hpp\n'}
+[12.163964] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__traits.hpp\n'}
+[12.168141] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__type_support.hpp\n'}
+[12.171493] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__builder.hpp\n'}
+[12.175909] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__struct.hpp\n'}
+[12.179919] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__traits.hpp\n'}
+[12.183664] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__type_support.hpp\n'}
+[12.187623] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection.hpp\n'}
+[12.191295] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detection_array.hpp\n'}
+[12.194988] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d.hpp\n'}
+[12.198628] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point2_d_array.hpp\n'}
+[12.202257] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d.hpp\n'}
+[12.206153] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/key_point3_d_array.hpp\n'}
+[12.209918] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/mask.hpp\n'}
+[12.213639] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/point2_d.hpp\n'}
+[12.217317] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/pose2_d.hpp\n'}
+[12.220911] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.223269] (-) TimerEvent: {}
+[12.224653] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/vector2.hpp\n'}
+[12.228357] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__builder.hpp\n'}
+[12.232116] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__struct.hpp\n'}
+[12.235701] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__traits.hpp\n'}
+[12.239405] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__type_support.hpp\n'}
+[12.243056] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/set_classes.hpp\n'}
+[12.247141] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.251672] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.256084] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.261022] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.265665] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.269596] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.273092] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.276946] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.281914] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.285931] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.290797] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.294727] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.298825] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.303157] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.308014] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.311826] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.316337] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.320339] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.323740] (-) TimerEvent: {}
+[12.324066] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.327892] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.331565] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.335291] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.339148] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.342910] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.346515] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.351402] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/msg/detail/vector2__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.355019] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/include/yolo_msgs/yolo_msgs/srv/detail/set_classes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.359025] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.sh\n'}
+[12.363988] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/pythonpath.dsv\n'}
+[12.368052] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.2.0-py3.10.egg-info/PKG-INFO\n'}
+[12.371427] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[12.376053] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[12.380044] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs-4.2.0-py3.10.egg-info/top_level.txt\n'}
+[12.384443] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/__init__.py\n'}
+[12.388407] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[12.392229] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.395817] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/_yolo_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.399671] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/libyolo_msgs__rosidl_generator_py.so\n'}
+[12.403444] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/__init__.py\n'}
+[12.407200] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box2_d.py\n'}
+[12.410794] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box2_d_s.c\n'}
+[12.414442] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box3_d.py\n'}
+[12.418050] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box3_d_s.c\n'}
+[12.421745] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection.py\n'}
+[12.424085] (-) TimerEvent: {}
+[12.425495] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_array.py\n'}
+[12.429192] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_array_s.c\n'}
+[12.432473] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_s.c\n'}
+[12.435619] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d.py\n'}
+[12.439335] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_array.py\n'}
+[12.443622] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_array_s.c\n'}
+[12.447641] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_s.c\n'}
+[12.452120] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d.py\n'}
+[12.459051] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_array.py\n'}
+[12.459645] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_array_s.c\n'}
+[12.464556] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_s.c\n'}
+[12.468121] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_mask.py\n'}
+[12.471809] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_mask_s.c\n'}
+[12.476264] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_point2_d.py\n'}
+[12.480000] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_point2_d_s.c\n'}
+[12.483755] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_pose2_d.py\n'}
+[12.487801] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_pose2_d_s.c\n'}
+[12.491647] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_vector2.py\n'}
+[12.495441] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_vector2_s.c\n'}
+[12.499103] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/__init__.py\n'}
+[12.502872] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/_set_classes.py\n'}
+[12.506663] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/_set_classes_s.c\n'}
+[12.510346] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.514092] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.517745] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.521514] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.521600] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.521747] (yolo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/yolo_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[12.521906] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Point2D.idl\n'}
+[12.524161] (-) TimerEvent: {}
+[12.526000] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Vector2.idl\n'}
+[12.529838] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Pose2D.idl\n'}
+[12.533618] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox2D.idl\n'}
+[12.537472] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox3D.idl\n'}
+[12.541253] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Mask.idl\n'}
+[12.544973] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2D.idl\n'}
+[12.548793] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2DArray.idl\n'}
+[12.552876] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3D.idl\n'}
+[12.556833] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3DArray.idl\n'}
+[12.560428] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Detection.idl\n'}
+[12.569356] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/DetectionArray.idl\n'}
+[12.569452] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/srv/SetClasses.idl\n'}
+[12.571342] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Point2D.msg\n'}
+[12.576298] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Vector2.msg\n'}
+[12.580325] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Pose2D.msg\n'}
+[12.583727] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox2D.msg\n'}
+[12.587089] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/BoundingBox3D.msg\n'}
+[12.591008] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Mask.msg\n'}
+[12.594346] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2D.msg\n'}
+[12.597589] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint2DArray.msg\n'}
+[12.600960] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3D.msg\n'}
+[12.604139] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/KeyPoint3DArray.msg\n'}
+[12.607328] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/Detection.msg\n'}
+[12.610689] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/msg/DetectionArray.msg\n'}
+[12.613903] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/srv/SetClasses.srv\n'}
+[12.617098] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/srv/SetClasses_Request.msg\n'}
+[12.620478] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/srv/SetClasses_Response.msg\n'}
+[12.623818] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/ament_index/resource_index/package_run_dependencies/yolo_msgs\n'}
+[12.624277] (-) TimerEvent: {}
+[12.627167] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/ament_index/resource_index/parent_prefix_path/yolo_msgs\n'}
+[12.630560] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/ament_prefix_path.sh\n'}
+[12.633951] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/ament_prefix_path.dsv\n'}
+[12.637298] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/path.sh\n'}
+[12.640769] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/environment/path.dsv\n'}
+[12.644079] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/local_setup.bash\n'}
+[12.647239] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/local_setup.sh\n'}
+[12.651895] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/local_setup.zsh\n'}
+[12.654301] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/local_setup.dsv\n'}
+[12.657666] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.dsv\n'}
+[12.661002] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/ament_index/resource_index/packages/yolo_msgs\n'}
+[12.664722] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[12.668474] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.673273] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.676921] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.681463] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.685337] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.689463] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.693178] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgsConfig.cmake\n'}
+[12.697033] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgsConfig-version.cmake\n'}
+[12.700545] (yolo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.xml\n'}
+[12.703974] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_c.so\n'}
+[12.704220] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_c.so" to ""\n'}
+[12.704258] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[12.704449] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.704484] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_c.so\n'}
+[12.704666] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.704709] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_c.so\n'}
+[12.704869] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_c.so" to ""\n'}
+[12.704911] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.705192] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.705227] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[12.705526] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.705564] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_cpp.so\n'}
+[12.705727] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[12.724368] (-) TimerEvent: {}
+[12.731179] (yolo_msgs) StdoutLine: {'line': b"Listing '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs'...\n"}
+[12.731258] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/__init__.py'...\n"}
+[12.731289] (yolo_msgs) StdoutLine: {'line': b"Listing '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg'...\n"}
+[12.731315] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/__init__.py'...\n"}
+[12.731341] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box2_d.py'...\n"}
+[12.731367] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_bounding_box3_d.py'...\n"}
+[12.731391] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection.py'...\n"}
+[12.731415] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_detection_array.py'...\n"}
+[12.731440] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d.py'...\n"}
+[12.731469] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point2_d_array.py'...\n"}
+[12.731495] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d.py'...\n"}
+[12.731520] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_key_point3_d_array.py'...\n"}
+[12.731545] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_mask.py'...\n"}
+[12.731568] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_point2_d.py'...\n"}
+[12.731592] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_pose2_d.py'...\n"}
+[12.731616] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/msg/_vector2.py'...\n"}
+[12.731639] (yolo_msgs) StdoutLine: {'line': b"Listing '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv'...\n"}
+[12.731664] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/__init__.py'...\n"}
+[12.731688] (yolo_msgs) StdoutLine: {'line': b"Compiling '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages/yolo_msgs/srv/_set_classes.py'...\n"}
+[12.734474] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_py.so\n'}
+[12.734694] (yolo_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/libyolo_msgs__rosidl_generator_py.so" to ""\n'}
+[12.734822] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cExport.cmake\n'}
+[12.734862] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.735002] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.735030] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.735101] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.735145] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.735193] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cExport.cmake\n'}
+[12.735308] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.735360] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_cppExport.cmake\n'}
+[12.735461] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.735513] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.735558] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.735686] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.735746] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[12.735834] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/yolo_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.735965] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_pyExport.cmake\n'}
+[12.736016] (yolo_msgs) StdoutLine: {'line': b'-- Installing: /home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/cmake/export_yolo_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.737635] (yolo_msgs) CommandEnded: {'returncode': 0}
+[12.746072] (yolo_msgs) JobEnded: {'identifier': 'yolo_msgs', 'rc': 0}
+[12.746430] (yolo_ros) JobStarted: {'identifier': 'yolo_ros'}
+[12.824484] (-) TimerEvent: {}
+[12.924688] (-) TimerEvent: {}
+[13.024984] (-) TimerEvent: {}
+[13.081158] (yolo_ros) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/aleksantari/ros2_snake_ws/build/yolo_ros/build', '--no-deps', 'symlink_data'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/yolo_ros', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'aleksantari', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/aleksantari', 'OLDPWD': '/home/aleksantari', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1708', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'aleksantari', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'aleksantari', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.RAHE52', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.119', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/aleksantari/ros2_snake_ws/build/yolo_ros', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/aleksantari/ros2_snake_ws/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/aleksantari/ros2_snake_ws/install/yolo_msgs'}, 'shell': False}
+[13.125073] (-) TimerEvent: {}
+[13.220591] (yolo_ros) StdoutLine: {'line': b'running develop\n'}
+[13.225265] (-) TimerEvent: {}
+[13.300014] (yolo_ros) StdoutLine: {'line': b'running egg_info\n'}
+[13.300206] (yolo_ros) StdoutLine: {'line': b'creating yolo_ros.egg-info\n'}
+[13.300334] (yolo_ros) StdoutLine: {'line': b'writing yolo_ros.egg-info/PKG-INFO\n'}
+[13.300496] (yolo_ros) StdoutLine: {'line': b'writing dependency_links to yolo_ros.egg-info/dependency_links.txt\n'}
+[13.300578] (yolo_ros) StdoutLine: {'line': b'writing entry points to yolo_ros.egg-info/entry_points.txt\n'}
+[13.300691] (yolo_ros) StdoutLine: {'line': b'writing requirements to yolo_ros.egg-info/requires.txt\n'}
+[13.300802] (yolo_ros) StdoutLine: {'line': b'writing top-level names to yolo_ros.egg-info/top_level.txt\n'}
+[13.300952] (yolo_ros) StdoutLine: {'line': b"writing manifest file 'yolo_ros.egg-info/SOURCES.txt'\n"}
+[13.301872] (yolo_ros) StdoutLine: {'line': b"reading manifest file 'yolo_ros.egg-info/SOURCES.txt'\n"}
+[13.302182] (yolo_ros) StdoutLine: {'line': b"writing manifest file 'yolo_ros.egg-info/SOURCES.txt'\n"}
+[13.302927] (yolo_ros) StdoutLine: {'line': b'running build_ext\n'}
+[13.303108] (yolo_ros) StdoutLine: {'line': b'Creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages/yolo-ros.egg-link (link to .)\n'}
+[13.303519] (yolo_ros) StdoutLine: {'line': b'Installing debug_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros\n'}
+[13.303629] (yolo_ros) StdoutLine: {'line': b'Installing detect_3d_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros\n'}
+[13.303751] (yolo_ros) StdoutLine: {'line': b'Installing tracking_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros\n'}
+[13.303861] (yolo_ros) StdoutLine: {'line': b'Installing yolo_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros\n'}
+[13.303974] (yolo_ros) StdoutLine: {'line': b'\n'}
+[13.304042] (yolo_ros) StdoutLine: {'line': b'Installed /home/aleksantari/ros2_snake_ws/build/yolo_ros\n'}
+[13.304158] (yolo_ros) StdoutLine: {'line': b'running symlink_data\n'}
+[13.304265] (yolo_ros) StdoutLine: {'line': b'creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index\n'}
+[13.304299] (yolo_ros) StdoutLine: {'line': b'creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index/resource_index\n'}
+[13.304404] (yolo_ros) StdoutLine: {'line': b'creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index/resource_index/packages\n'}
+[13.304441] (yolo_ros) StdoutLine: {'line': b'symbolically linking /home/aleksantari/ros2_snake_ws/build/yolo_ros/resource/yolo_ros -> /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index/resource_index/packages\n'}
+[13.304544] (yolo_ros) StdoutLine: {'line': b'symbolically linking /home/aleksantari/ros2_snake_ws/build/yolo_ros/package.xml -> /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros\n'}
+[13.321011] (yolo_ros) CommandEnded: {'returncode': 0}
+[13.324566] (yolo_ros) JobEnded: {'identifier': 'yolo_ros', 'rc': 0}
+[13.324786] (yolo_bringup) JobStarted: {'identifier': 'yolo_bringup'}
+[13.325404] (-) TimerEvent: {}
+[13.329094] (yolo_bringup) JobProgress: {'identifier': 'yolo_bringup', 'progress': 'cmake'}
+[13.329695] (yolo_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_bringup', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/aleksantari/ros2_snake_ws/install/yolo_bringup'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/yolo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aleksantari'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aleksantari'), ('OLDPWD', '/home/aleksantari'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aleksantari'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aleksantari'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RAHE52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aleksantari/ros2_snake_ws/build/yolo_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aleksantari/ros2_snake_ws/build/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[13.371365] (yolo_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[13.401990] (yolo_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[13.406195] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[13.425507] (-) TimerEvent: {}
+[13.440929] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[13.445883] (yolo_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[13.446059] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[13.446337] (yolo_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[13.448331] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[13.503752] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[13.508762] (yolo_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[13.508971] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[13.509294] (yolo_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[13.510921] (yolo_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[13.525609] (-) TimerEvent: {}
+[13.603277] (yolo_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[13.625701] (-) TimerEvent: {}
+[13.639694] (yolo_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[13.701652] (yolo_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.703786] (yolo_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[13.704961] (yolo_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/aleksantari/ros2_snake_ws/build/yolo_bringup\n'}
+[13.707963] (yolo_bringup) CommandEnded: {'returncode': 0}
+[13.708932] (yolo_bringup) JobProgress: {'identifier': 'yolo_bringup', 'progress': 'build'}
+[13.708950] (yolo_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/aleksantari/ros2_snake_ws/build/yolo_bringup', '--', '-j2', '-l2'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/yolo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aleksantari'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aleksantari'), ('OLDPWD', '/home/aleksantari'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aleksantari'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aleksantari'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RAHE52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aleksantari/ros2_snake_ws/build/yolo_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aleksantari/ros2_snake_ws/build/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[13.726146] (-) TimerEvent: {}
+[13.726943] (yolo_bringup) CommandEnded: {'returncode': 0}
+[13.727168] (yolo_bringup) JobProgress: {'identifier': 'yolo_bringup', 'progress': 'install'}
+[13.727681] (yolo_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/aleksantari/ros2_snake_ws/build/yolo_bringup'], 'cwd': '/home/aleksantari/ros2_snake_ws/build/yolo_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aleksantari'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/aleksantari'), ('OLDPWD', '/home/aleksantari'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1708'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install:/home/aleksantari/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aleksantari'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aleksantari'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/aleksantari/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/linux:@/tmp/.ICE-unix/1678,unix/linux:/tmp/.ICE-unix/1678'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c0bedb43_b351_4209_9aa5_c10cbdbb6178'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.RAHE52'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.119'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aleksantari/ros2_snake_ws/build/yolo_bringup'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/aleksantari/ros2_snake_ws/build/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages:/home/aleksantari/ros2_snake_ws/build/snake_segmentation:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:/home/aleksantari/ros2_ws/build/my_robot_controller:/home/aleksantari/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/home/aleksantari/ros2_ws/install/my_robot_controller:/opt/ros/humble')]), 'shell': False}
+[13.731174] (yolo_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.731572] (yolo_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.732011] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolo-world.launch.py\n'}
+[13.735986] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolo.launch.py\n'}
+[13.739860] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolov10.launch.py\n'}
+[13.743556] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolov11.launch.py\n'}
+[13.747076] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolov12.launch.py\n'}
+[13.750674] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolov5.launch.py\n'}
+[13.761800] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolov8.launch.py\n'}
+[13.766574] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup//launch/yolov9.launch.py\n'}
+[13.771142] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/ament_index/resource_index/package_run_dependencies/yolo_bringup\n'}
+[13.775389] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/ament_index/resource_index/parent_prefix_path/yolo_bringup\n'}
+[13.779063] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/environment/ament_prefix_path.sh\n'}
+[13.783027] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/environment/ament_prefix_path.dsv\n'}
+[13.786656] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/environment/path.sh\n'}
+[13.790387] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/environment/path.dsv\n'}
+[13.794025] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/local_setup.bash\n'}
+[13.797699] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/local_setup.sh\n'}
+[13.801513] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/local_setup.zsh\n'}
+[13.805913] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/local_setup.dsv\n'}
+[13.811006] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.dsv\n'}
+[13.815041] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/ament_index/resource_index/packages/yolo_bringup\n'}
+[13.818990] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/cmake/yolo_bringupConfig.cmake\n'}
+[13.823314] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/cmake/yolo_bringupConfig-version.cmake\n'}
+[13.826515] (-) TimerEvent: {}
+[13.828082] (yolo_bringup) StdoutLine: {'line': b'-- Symlinking: /home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.xml\n'}
+[13.833309] (yolo_bringup) CommandEnded: {'returncode': 0}
+[13.838875] (yolo_bringup) JobEnded: {'identifier': 'yolo_bringup', 'rc': 0}
+[13.839326] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+/home/aleksantari/ros2_snake_ws/build/yolo_msgs/rosidl_generator_c/yolo_msgs/srv/detail/set_classes__struct.h

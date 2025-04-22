@@ -1,0 +1,27 @@
+[0.335s] Invoking command in '/home/aleksantari/ros2_snake_ws/build/yolo_ros': AMENT_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs LD_LIBRARY_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/yolo_ros/build --no-deps symlink_data
+[0.474s] running develop
+[0.554s] running egg_info
+[0.554s] creating yolo_ros.egg-info
+[0.554s] writing yolo_ros.egg-info/PKG-INFO
+[0.554s] writing dependency_links to yolo_ros.egg-info/dependency_links.txt
+[0.554s] writing entry points to yolo_ros.egg-info/entry_points.txt
+[0.554s] writing requirements to yolo_ros.egg-info/requires.txt
+[0.554s] writing top-level names to yolo_ros.egg-info/top_level.txt
+[0.555s] writing manifest file 'yolo_ros.egg-info/SOURCES.txt'
+[0.555s] reading manifest file 'yolo_ros.egg-info/SOURCES.txt'
+[0.556s] writing manifest file 'yolo_ros.egg-info/SOURCES.txt'
+[0.557s] running build_ext
+[0.557s] Creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages/yolo-ros.egg-link (link to .)
+[0.557s] Installing debug_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros
+[0.557s] Installing detect_3d_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros
+[0.557s] Installing tracking_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros
+[0.557s] Installing yolo_node script to /home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/yolo_ros
+[0.558s] 
+[0.558s] Installed /home/aleksantari/ros2_snake_ws/build/yolo_ros
+[0.558s] running symlink_data
+[0.558s] creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index
+[0.558s] creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index/resource_index
+[0.558s] creating /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index/resource_index/packages
+[0.558s] symbolically linking /home/aleksantari/ros2_snake_ws/build/yolo_ros/resource/yolo_ros -> /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/ament_index/resource_index/packages
+[0.558s] symbolically linking /home/aleksantari/ros2_snake_ws/build/yolo_ros/package.xml -> /home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros
+[0.575s] Invoked command in '/home/aleksantari/ros2_snake_ws/build/yolo_ros' returned '0': AMENT_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs LD_LIBRARY_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:/home/aleksantari/ros2_snake_ws/install/yolo_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/yolo_ros/build --no-deps symlink_data

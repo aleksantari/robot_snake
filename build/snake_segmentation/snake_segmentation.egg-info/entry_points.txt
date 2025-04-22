@@ -1,0 +1,3 @@
+[console_scripts]
+segmentation_node = snake_segmentation.snake_segmentation_node:main
+

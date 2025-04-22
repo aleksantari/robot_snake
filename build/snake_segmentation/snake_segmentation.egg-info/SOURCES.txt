@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+resource/snake_segmentation
+snake_segmentation/__init__.py
+snake_segmentation/snake_segmentation_node.py
+snake_segmentation.egg-info/PKG-INFO
+snake_segmentation.egg-info/SOURCES.txt
+snake_segmentation.egg-info/dependency_links.txt
+snake_segmentation.egg-info/entry_points.txt
+snake_segmentation.egg-info/requires.txt
+snake_segmentation.egg-info/top_level.txt
+snake_segmentation.egg-info/zip-safe

@@ -1,0 +1,17 @@
+[0.466s] Invoking command in '/home/aleksantari/ros2_snake_ws/build/snake_segmentation': PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/snake_segmentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/snake_segmentation/build --no-deps symlink_data
+[0.612s] running develop
+[0.700s] running egg_info
+[0.701s] writing snake_segmentation.egg-info/PKG-INFO
+[0.701s] writing dependency_links to snake_segmentation.egg-info/dependency_links.txt
+[0.701s] writing entry points to snake_segmentation.egg-info/entry_points.txt
+[0.701s] writing requirements to snake_segmentation.egg-info/requires.txt
+[0.701s] writing top-level names to snake_segmentation.egg-info/top_level.txt
+[0.703s] reading manifest file 'snake_segmentation.egg-info/SOURCES.txt'
+[0.703s] writing manifest file 'snake_segmentation.egg-info/SOURCES.txt'
+[0.704s] running build_ext
+[0.704s] Creating /home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages/snake-segmentation.egg-link (link to .)
+[0.705s] Installing segmentation_node script to /home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/snake_segmentation
+[0.705s] 
+[0.705s] Installed /home/aleksantari/ros2_snake_ws/build/snake_segmentation
+[0.705s] running symlink_data
+[0.727s] Invoked command in '/home/aleksantari/ros2_snake_ws/build/snake_segmentation' returned '0': PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/snake_segmentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/snake_segmentation/build --no-deps symlink_data
