@@ -1,6 +1,7 @@
 package.xml
 setup.cfg
 setup.py
+models/yolo11n-seg.pt
 resource/snake_segmentation
 snake_segmentation/__init__.py
 snake_segmentation/snake_segmentation_node.py

@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing snake_segmentation.egg-info/PKG-INFO
+writing dependency_links to snake_segmentation.egg-info/dependency_links.txt
+writing entry points to snake_segmentation.egg-info/entry_points.txt
+writing requirements to snake_segmentation.egg-info/requires.txt
+writing top-level names to snake_segmentation.egg-info/top_level.txt
+reading manifest file 'snake_segmentation.egg-info/SOURCES.txt'
+writing manifest file 'snake_segmentation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages/snake-segmentation.egg-link (link to .)
+Installing segmentation_node script to /home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/snake_segmentation
+
+Installed /home/aleksantari/ros2_snake_ws/build/snake_segmentation
+running symlink_data

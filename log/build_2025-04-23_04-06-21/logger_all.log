@@ -1,0 +1,347 @@
+[0.106s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.106s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa300a170>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffa31b35e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffa31b35e0>>)
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.272s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.272s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aleksantari/ros2_snake_ws'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.272s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.273s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.283s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extensions ['ignore', 'ignore_ament_install']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extension 'ignore'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extension 'ignore_ament_install'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extensions ['colcon_pkg']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extension 'colcon_pkg'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extensions ['colcon_meta']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extension 'colcon_meta'
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extensions ['ros']
+[0.284s] Level 1:colcon.colcon_core.package_identification:_identify(src/snake_segmentation) by extension 'ros'
+[0.286s] DEBUG:colcon.colcon_core.package_identification:Package 'src/snake_segmentation' with type 'ros.ament_python' and name 'snake_segmentation'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'ros'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extensions ['python_setup_py']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'ignore_ament_install'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['colcon_pkg']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'colcon_pkg'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['colcon_meta']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'colcon_meta'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['ros']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'ros'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['cmake', 'python']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'cmake'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'python'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extensions ['python_setup_py']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/docs) by extension 'python_setup_py'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'ignore'
+[0.286s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_bringup) by extension 'ros'
+[0.287s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_ros/yolo_bringup' with type 'ros.ament_cmake' and name 'yolo_bringup'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'ignore'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'ignore_ament_install'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['colcon_pkg']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'colcon_pkg'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['colcon_meta']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'colcon_meta'
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extensions ['ros']
+[0.287s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_msgs) by extension 'ros'
+[0.288s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_ros/yolo_msgs' with type 'ros.ament_cmake' and name 'yolo_msgs'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'ignore'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'ignore_ament_install'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['colcon_pkg']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'colcon_pkg'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['colcon_meta']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'colcon_meta'
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extensions ['ros']
+[0.288s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolo_ros/yolo_ros) by extension 'ros'
+[0.289s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolo_ros/yolo_ros' with type 'ros.ament_python' and name 'yolo_ros'
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.310s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/aleksantari/ros2_snake_ws/install
+[0.312s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 349 installed packages in /opt/ros/humble
+[0.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'cmake_target' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'cmake_clean_first' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'cmake_force_configure' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'ament_cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'snake_segmentation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.462s] DEBUG:colcon.colcon_core.verb:Building package 'snake_segmentation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aleksantari/ros2_snake_ws/build/snake_segmentation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aleksantari/ros2_snake_ws/install/snake_segmentation', 'merge_install': False, 'path': '/home/aleksantari/ros2_snake_ws/src/snake_segmentation', 'symlink_install': True, 'test_result_base': None}
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_target' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.462s] Level 5:colcon.colcon_core.verb:set package 'yolo_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.462s] DEBUG:colcon.colcon_core.verb:Building package 'yolo_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aleksantari/ros2_snake_ws/build/yolo_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aleksantari/ros2_snake_ws/install/yolo_msgs', 'merge_install': False, 'path': '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_args' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_target' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.463s] DEBUG:colcon.colcon_core.verb:Building package 'yolo_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aleksantari/ros2_snake_ws/build/yolo_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aleksantari/ros2_snake_ws/install/yolo_ros', 'merge_install': False, 'path': '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_ros', 'symlink_install': True, 'test_result_base': None}
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_args' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_target' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.463s] Level 5:colcon.colcon_core.verb:set package 'yolo_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.463s] DEBUG:colcon.colcon_core.verb:Building package 'yolo_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aleksantari/ros2_snake_ws/build/yolo_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aleksantari/ros2_snake_ws/install/yolo_bringup', 'merge_install': False, 'path': '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.463s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.464s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.464s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_msgs' with build type 'ament_cmake'
+[0.464s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_msgs'
+[0.467s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.467s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.468s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.497s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aleksantari/ros2_snake_ws/src/snake_segmentation' with build type 'ament_python'
+[0.498s] Level 1:colcon.colcon_core.shell:create_environment_hook('snake_segmentation', 'ament_prefix_path')
+[0.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/hook/ament_prefix_path.ps1'
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/hook/ament_prefix_path.dsv'
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/hook/ament_prefix_path.sh'
+[0.500s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.500s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aleksantari/ros2_snake_ws/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --build /home/aleksantari/ros2_snake_ws/build/yolo_msgs -- -j2 -l2
+[0.852s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aleksantari/ros2_snake_ws/src/snake_segmentation'
+[0.852s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.852s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aleksantari/ros2_snake_ws/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --build /home/aleksantari/ros2_snake_ws/build/yolo_msgs -- -j2 -l2
+[1.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aleksantari/ros2_snake_ws/build/yolo_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --install /home/aleksantari/ros2_snake_ws/build/yolo_msgs
+[1.322s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aleksantari/ros2_snake_ws/build/snake_segmentation': PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/snake_segmentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/snake_segmentation/build --no-deps symlink_data
+[1.464s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_msgs)
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aleksantari/ros2_snake_ws/build/yolo_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --install /home/aleksantari/ros2_snake_ws/build/yolo_msgs
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs' for CMake module files
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs' for CMake config files
+[1.467s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'cmake_prefix_path')
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.ps1'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.dsv'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.sh'
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib'
+[1.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'ld_library_path_lib')
+[1.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.ps1'
+[1.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.dsv'
+[1.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.sh'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/bin'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/pkgconfig/yolo_msgs.pc'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/python3.10/site-packages'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/bin'
+[1.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.ps1'
+[1.470s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.dsv'
+[1.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.sh'
+[1.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.bash'
+[1.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.zsh'
+[1.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/colcon-core/packages/yolo_msgs)
+[1.493s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_msgs)
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs' for CMake module files
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs' for CMake config files
+[1.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'cmake_prefix_path')
+[1.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.ps1'
+[1.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.dsv'
+[1.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/cmake_prefix_path.sh'
+[1.495s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib'
+[1.495s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_msgs', 'ld_library_path_lib')
+[1.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.ps1'
+[1.495s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.dsv'
+[1.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/hook/ld_library_path_lib.sh'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/bin'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/pkgconfig/yolo_msgs.pc'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/lib/python3.10/site-packages'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/bin'
+[1.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.ps1'
+[1.497s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.dsv'
+[1.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.sh'
+[1.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.bash'
+[1.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/yolo_msgs/package.zsh'
+[1.507s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aleksantari/ros2_snake_ws/install/yolo_msgs/share/colcon-core/packages/yolo_msgs)
+[1.507s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_ros' with build type 'ament_python'
+[1.508s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_ros', 'ament_prefix_path')
+[1.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/hook/ament_prefix_path.ps1'
+[1.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/hook/ament_prefix_path.dsv'
+[1.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/hook/ament_prefix_path.sh'
+[1.516s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.516s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.815s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_ros'
+[1.815s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.815s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('snake_segmentation', 'pythonpath_develop')
+[1.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/build/snake_segmentation/share/snake_segmentation/hook/pythonpath_develop.ps1'
+[1.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/build/snake_segmentation/share/snake_segmentation/hook/pythonpath_develop.dsv'
+[1.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/build/snake_segmentation/share/snake_segmentation/hook/pythonpath_develop.sh'
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/snake_segmentation' for CMake module files
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/snake_segmentation' for CMake config files
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/bin'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/pkgconfig/snake_segmentation.pc'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages'
+[1.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('snake_segmentation', 'pythonpath')
+[1.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/hook/pythonpath.ps1'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/hook/pythonpath.dsv'
+[1.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/hook/pythonpath.sh'
+[1.820s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/bin'
+[1.820s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(snake_segmentation)
+[1.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/package.ps1'
+[1.821s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/package.dsv'
+[1.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/package.sh'
+[1.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/package.bash'
+[1.829s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aleksantari/ros2_snake_ws/build/snake_segmentation' returned '0': PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/snake_segmentation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/snake_segmentation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/snake_segmentation/build --no-deps symlink_data
+[1.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/snake_segmentation/package.zsh'
+[1.829s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aleksantari/ros2_snake_ws/install/snake_segmentation/share/colcon-core/packages/snake_segmentation)
+[2.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aleksantari/ros2_snake_ws/build/yolo_ros': CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/yolo_bringup PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/yolo_ros/build --no-deps symlink_data
+[2.387s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_ros', 'pythonpath_develop')
+[2.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/build/yolo_ros/share/yolo_ros/hook/pythonpath_develop.ps1'
+[2.388s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/build/yolo_ros/share/yolo_ros/hook/pythonpath_develop.dsv'
+[2.388s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/build/yolo_ros/share/yolo_ros/hook/pythonpath_develop.sh'
+[2.388s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_ros' for CMake module files
+[2.388s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_ros' for CMake config files
+[2.389s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib'
+[2.389s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_ros/bin'
+[2.389s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/pkgconfig/yolo_ros.pc'
+[2.389s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages'
+[2.389s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_ros', 'pythonpath')
+[2.389s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/hook/pythonpath.ps1'
+[2.389s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/hook/pythonpath.dsv'
+[2.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aleksantari/ros2_snake_ws/build/yolo_ros' returned '0': CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/yolo_bringup PYTHONPATH=/home/aleksantari/ros2_snake_ws/build/yolo_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/aleksantari/ros2_snake_ws/install/yolo_ros/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/aleksantari/ros2_snake_ws/build/yolo_ros/build --no-deps symlink_data
+[2.390s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/hook/pythonpath.sh'
+[2.390s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_ros/bin'
+[2.390s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_ros)
+[2.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/package.ps1'
+[2.390s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/package.dsv'
+[2.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/package.sh'
+[2.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/package.bash'
+[2.391s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/yolo_ros/package.zsh'
+[2.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aleksantari/ros2_snake_ws/install/yolo_ros/share/colcon-core/packages/yolo_ros)
+[2.391s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_bringup' with build type 'ament_cmake'
+[2.391s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aleksantari/ros2_snake_ws/src/yolo_ros/yolo_bringup'
+[2.391s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.392s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aleksantari/ros2_snake_ws/build/yolo_bringup': AMENT_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --build /home/aleksantari/ros2_snake_ws/build/yolo_bringup -- -j2 -l2
+[2.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aleksantari/ros2_snake_ws/build/yolo_bringup' returned '0': AMENT_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --build /home/aleksantari/ros2_snake_ws/build/yolo_bringup -- -j2 -l2
+[2.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aleksantari/ros2_snake_ws/build/yolo_bringup': AMENT_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --install /home/aleksantari/ros2_snake_ws/build/yolo_bringup
+[2.462s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_bringup)
+[2.462s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup' for CMake module files
+[2.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aleksantari/ros2_snake_ws/build/yolo_bringup' returned '0': AMENT_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble CMAKE_PREFIX_PATH=/home/aleksantari/ros2_snake_ws/install/yolo_msgs:/home/aleksantari/ros2_snake_ws/install/yolo_bringup:/home/aleksantari/ros2_snake_ws/install/yolo_ros:/home/aleksantari/ros2_snake_ws/install/snake_segmentation:/opt/ros/humble /usr/bin/cmake --install /home/aleksantari/ros2_snake_ws/build/yolo_bringup
+[2.463s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup' for CMake config files
+[2.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_bringup', 'cmake_prefix_path')
+[2.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.ps1'
+[2.463s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.dsv'
+[2.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.sh'
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/bin'
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/lib/pkgconfig/yolo_bringup.pc'
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/lib/python3.10/site-packages'
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/bin'
+[2.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.ps1'
+[2.464s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.dsv'
+[2.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.sh'
+[2.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.bash'
+[2.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.zsh'
+[2.465s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/colcon-core/packages/yolo_bringup)
+[2.465s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolo_bringup)
+[2.465s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup' for CMake module files
+[2.466s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup' for CMake config files
+[2.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolo_bringup', 'cmake_prefix_path')
+[2.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.ps1'
+[2.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.dsv'
+[2.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/hook/cmake_prefix_path.sh'
+[2.466s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/bin'
+[2.466s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/lib/pkgconfig/yolo_bringup.pc'
+[2.466s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/lib/python3.10/site-packages'
+[2.466s] Level 1:colcon.colcon_core.environment:checking '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/bin'
+[2.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.ps1'
+[2.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.dsv'
+[2.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.sh'
+[2.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.bash'
+[2.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/yolo_bringup/package.zsh'
+[2.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aleksantari/ros2_snake_ws/install/yolo_bringup/share/colcon-core/packages/yolo_bringup)
+[2.468s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.469s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.472s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.477s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.477s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.477s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.535s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.535s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aleksantari/ros2_snake_ws/install/local_setup.ps1'
+[2.535s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aleksantari/ros2_snake_ws/install/_local_setup_util_ps1.py'
+[2.536s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aleksantari/ros2_snake_ws/install/setup.ps1'
+[2.537s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aleksantari/ros2_snake_ws/install/local_setup.sh'
+[2.538s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aleksantari/ros2_snake_ws/install/_local_setup_util_sh.py'
+[2.538s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aleksantari/ros2_snake_ws/install/setup.sh'
+[2.539s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aleksantari/ros2_snake_ws/install/local_setup.bash'
+[2.539s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aleksantari/ros2_snake_ws/install/setup.bash'
+[2.539s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aleksantari/ros2_snake_ws/install/local_setup.zsh'
+[2.540s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aleksantari/ros2_snake_ws/install/setup.zsh'
